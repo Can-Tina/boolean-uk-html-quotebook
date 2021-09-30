@@ -1,0 +1,90 @@
+* {
+    background-color: lightgray;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .container {
+    width: 100vw;
+    height: 100vh;
+  
+    display: grid;
+  
+    grid-template:
+      "header header header" 63px
+      "left-menu main right-menu" 1fr
+      "footer footer footer" 50px /
+      200px minmax(500px,1fr) 200px;
+      gap: 15px;
+
+  }
+
+  .header {
+    grid-area: header;
+    background-color: #bed4c8;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-indent: 20px;
+    font-size: 1.2;
+    display: grid;
+    grid-template-columns:75px 400px 1fr;
+    grid-template-rows: 70px;
+  }
+  
+  .left-menu,
+  .left-menu p {
+    grid-area: left-menu;
+    background-color: white;
+  }
+
+  .left-menu{
+    padding-left: 10px;
+  }
+  
+  .main,
+  .main h2,
+  .main dt,
+  .main dl,
+  .main dd,
+  .main div{
+    grid-area: main;
+    background-color: white;
+    list-style-type: none;
+  }
+
+  .main{
+    line-height: 2;
+    padding: 10px 0px 0px 20px;
+  }
+
+  .right-menu {
+    grid-area: right-menu;
+  }
+  
+  .footer {
+    grid-area: footer;
+  }
+
+  .name,
+  .name h1{
+    background-color: #bed4c8;
+  }
+
+  .logo img{
+    width: 50px;
+    height: 50px;
+    background-color: #bed4c8;
+  }
+
+  .logo{
+    padding-top: 10px;
+    background-color: #bed4c8;
+  }
+
+  .slogan,
+  .slogan p{
+    text-align: end;
+    padding-top: 5px;
+    padding-right: 20px;
+    background-color: #bed4c8;
+  }
